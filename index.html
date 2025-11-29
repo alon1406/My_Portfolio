@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alon Etos | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="site-header">
+    <div class="logo">Alon Etos</div>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO / ABOUT -->
+    <section class="hero" id="about" data-reveal>
+      <div class="hero__content">
+        <p class="eyebrow">Software Engineering Student</p>
+        <h1>Hi, I'm Alon Etos</h1>
+        <p class="lede">
+          Third year Software Engineering student at Afeka College of Engineering (GPA 86.19).
+          I have a strong interest in technology, computers, algorithms, and how software can solve
+          real world problems in an efficient and elegant way. In my free time, I independently learn
+          modern Web Development, focusing on HTML, CSS, JavaScript, React and Node.js.
+        </p>
+
+        <!-- שורת התכונות – מתמלאת מה-JS -->
+        <p class="ai-line" id="aiLine"></p>
+
+        <div class="hero__cta">
+          <a class="btn primary" href="mailto:alonet2468@gmail.com">Email Me</a>
+          <a class="btn cv" href="assets/Alon Etos_CV.pdf" download>Download CV</a>
+          <a class="btn ghost" href="#contact">View Details</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="profile-card">
+          <div class="profile-photo">
+            <img src="assets/alon-profile.jpeg" alt="Alon Etos profile photo" />
+          </div>
+
+          <div class="profile-body">
+            <p class="profile-name">
+              Alon Etos<span class="profile-info-inline">, 25</span>
+            </p>
+
+            <p class="profile-location-line">Israel</p>
+
+            <p class="profile-contact-line">
+              📞
+              <a href="tel:+972544352525" class="contact-link">+972-54-435-2525</a>
+            </p>
+
+            <p class="profile-contact-line">
+              ✉️
+              <a href="mailto:alonet2468@gmail.com" class="contact-link">alonet2468@gmail.com</a>
+            </p>
+
+            <p class="profile-role">Software Engineering Student</p>
+
+            <div class="profile-links">
+              <a
+                class="link-out"
+                href="https://www.linkedin.com/in/alonetos/"
+                aria-label="LinkedIn profile"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="link-out"
+                href="https://github.com/alon1406"
+                aria-label="GitHub profile"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="panel" id="education" data-reveal>
+      <div class="panel__header">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+      </div>
+
+      <div class="card">
+        <div class="card__title">B.Sc. Software Engineering</div>
+        <div class="card__meta">
+          2023 – Present · Afeka College of Engineering · GPA: 86.19
+        </div>
+        <p class="card__body">
+          Third-year Software Engineering student focusing on algorithms, data structures,
+          operating systems and software design.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Full Matriculation Diploma</div>
+        <div class="card__meta">2015 – 2018 · Leo Baeck Education Center</div>
+        <p class="card__body">
+          5 units in Mathematics and English, with advanced studies in Chemistry and Geography.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Academic Projects from CV) -->
+    <section class="panel" id="projects" data-reveal>
+      <div class="panel__header">
+        <p class="eyebrow">Academic Projects</p>
+        <h2>Selected work</h2>
+      </div>
+
+      <div class="projects-list">
+        <!-- C course -->
+        <a
+          class="project-card card"
+          href="https://github.com/alon1406/2048-Ubuntu"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <div class="project-main">
+            <h3 class="card__title">C course: 2048 – Ubuntu</h3>
+            <p class="card__body">
+              Implementation of the 2048 game in C for Ubuntu as part of the C programming course.
+            </p>
+          </div>
+          <span class="project-link">View on GitHub</span>
+        </a>
+
+        <!-- OOP Java -->
+        <a
+          class="project-card card"
+          href="https://github.com/alon1406/OOP"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <div class="project-main">
+            <h3 class="card__title">OOP course: OOP – Java</h3>
+            <p class="card__body">
+              Object-oriented programming project in Java, based on core OOP principles learned
+              in the OOP course.
+            </p>
+          </div>
+          <span class="project-link">View on GitHub</span>
+        </a>
+
+        <!-- OOP + SQL -->
+        <a
+          class="project-card card"
+          href="https://github.com/alon1406/OOP_SQL"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <div class="project-main">
+            <h3 class="card__title">Database course: OOP with SQL</h3>
+            <p class="card__body">
+              Extension of the OOP Java project by connecting it to a PostgreSQL database using SQL,
+              developed as part of the Database course.
+            </p>
+          </div>
+          <span class="project-link">View on GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (Only civilian employment, no military) -->
+    <section class="panel" id="experience" data-reveal>
+      <div class="panel__header">
+        <p class="eyebrow">Experience</p>
+        <h2>Employment</h2>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Security Shift Manager</div>
+        <div class="card__meta">2021 – 2023 · Haifa Port and Passenger Terminal</div>
+        <p class="card__body">
+          Worked as a Security Shift Manager at Haifa Port and Passenger Terminal, responsible for
+          security operations and managing shifts in a dynamic environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="panel" id="skills" data-reveal>
+      <div class="panel__header">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical toolkit</h2>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Core Skills</div>
+        <p class="card__body">
+          Python · Java · C · PostgreSQL · Ubuntu · Git · Data Structures ·
+          OOP · Algorithms · Operating Systems · HTML · CSS · JavaScript
+        </p>
+      </div>
+
+      <div class="skill-icon-row">
+        <!-- C -->
+        <div class="skill-icon tilt" title="C">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+            alt="C logo"
+          />
+        </div>
+
+        <!-- Java -->
+        <div class="skill-icon tilt" title="Java">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            alt="Java logo"
+          />
+        </div>
+
+        <!-- Python -->
+        <div class="skill-icon tilt" title="Python">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            alt="Python logo"
+          />
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-icon tilt" title="HTML">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+            alt="HTML5 logo"
+          />
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-icon tilt" title="CSS">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+            alt="CSS3 logo"
+          />
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-icon tilt" title="JavaScript">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            alt="JavaScript logo"
+          />
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="skill-icon tilt" title="PostgreSQL">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL logo"
+          />
+        </div>
+
+        <!-- Ubuntu -->
+        <div class="skill-icon tilt" title="Ubuntu">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-plain.svg"
+            alt="Ubuntu logo"
+          />
+        </div>
+
+        <!-- Git -->
+        <div class="skill-icon tilt" title="Git">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+            alt="Git logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="panel" id="languages" data-reveal>
+      <div class="panel__header">
+        <p class="eyebrow">Languages</p>
+        <h2>Communication</h2>
+      </div>
+
+      <div class="language-cards">
+        <div class="language-card fancy">
+          <div class="lang-label">HE</div>
+          <p class="lang-text">Hebrew — Native</p>
+        </div>
+
+        <div class="language-card fancy">
+          <div class="lang-label">EN</div>
+          <p class="lang-text">English — Very Good</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel contact" id="contact" data-reveal>
+      <div class="contact-details">
+        <p class="contact-detail-line">
+          📞
+          <a href="tel:+972544352525" class="contact-link">+972-54-435-2525</a>
+        </p>
+        <p class="contact-detail-line">
+          ✉️
+          <a href="mailto:alonet2468@gmail.com" class="contact-link">alonet2468@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="contact-buttons">
+        <a
+          class="social-btn linkedin"
+          href="https://www.linkedin.com/in/alonetos/"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            alt=""
+          />
+          LinkedIn
+        </a>
+
+        <a
+          class="social-btn github"
+          href="https://github.com/alon1406"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt=""
+          />
+          GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Alon Etos</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
